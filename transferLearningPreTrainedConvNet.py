@@ -71,11 +71,6 @@ base_model = tf.keras.applications.InceptionV3(input_shape=IMG_SHAPE,
                                                      include_top=False,
                                                      weights='imagenet')
 
-#
-#base_model = tf.keras.applications.MobileNetV2(input_shape=IMG_SHAPE,
-#                                               include_top=False,
-#                                               weights='imagenet')
-#
 feature_batch = base_model(image_batch)
 print(feature_batch.shape)
 
